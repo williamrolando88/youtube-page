@@ -11,26 +11,21 @@
     <title>Youtube Player</title>
 </head>
 <body>
-    <!-- TODO Top navbar with:
-        3 lines menu icon
-        Clickable Youtube logo
-        Search bar with search button (lens icon)
-        grey circle with mic icon
-        apps icon
-        3 vertical dots icon
-        sign in button
-    -->
 
     <div id="top-nav-bar">
         <div id="left-nav-bar">
             <span class="material-icons">menu</span>
-            Youtube logo
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png" 
+            alt="YouTube_Logo_2017" id="youtube-logo">
         </div>
         <div id="search-bar">
             <form action="#">
-                <label for="search-bar">
-                    <input type="search" id="search-input" name="search-input">
-                </label>
+                <div id="search-bar-container">
+                    <label for="search-bar">
+                        <input type="search" id="search-input" name="search-input">
+                    </label>
+                </div>
+                
                 <button type="submit" id="submit">
                     <span class="material-icons">
                         search
@@ -43,7 +38,7 @@
                 </span>
             </div>
         </div>
-        <div id="left-nav-bar">
+        <div id="rigth-nav-bar">
             <span class="material-icons">
                 apps
             </span>
@@ -91,5 +86,66 @@
                 views, time ago since the upload
                 3 vert dots
     -->
+
+    <div id="main-body">
+        <div id="player-body">
+            <div id="video-player">
+                <iframe id="video"
+                src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0">
+                </iframe>
+            </div>
+
+            <div id="name-tag">
+                <h2>Roman Carnival Overture Op. 9 for Five Trombones</h2>
+                <di id="statistics">
+                    <div id="views">
+                        185,061,942 views ~ Sep 22, 2010
+                    </div>
+                    <div id="buttons">
+                        <div id="like" class="action-buttons">
+                            <span class="material-icons">
+                                thumb_up
+                            </span>
+                            89K
+                        </div>
+                        <div id="dislike" class="action-buttons">
+                            <span class="material-icons">
+                                thumb_down
+                            </span>
+                            2.5K
+                        </div>
+                        <div id="share" class="action-buttons">
+                            <span class="material-icons">
+                                share
+                            </span>
+                            SHARE
+                        </div>
+                        <div id="save" class="action-buttons">
+                            <span class="material-icons">
+                                playlist_add
+                            </span>
+                            SAVE
+                        </div>
+                    </div>
+                </di>
+            </div>
+
+            <div id="info-area">
+                information
+            </div>
+            <div id="comments-area">
+                comments
+            </div>
+        </div>
+        <div id="suggested-videos">
+            <div class="video-thumbnail">
+                1 video
+            </div>
+            <div class="video-thumbnail">
+                2 video
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
